@@ -16,4 +16,13 @@ pub enum ErrorCode {
     SessionStillActive,
     #[msg("Math overflow")]
     MathOverflow,
+    #[msg("Price data is stale")]
+    StalePriceData,
+    #[msg("Invalid price data")]
+    InvalidPriceData,
+    #[msg("Price Feed Not Found")]
+    PriceFeedNotFound,
+
+    #[msg("Unsupported trading pair")]
+    UnsupportedTradingPair,
 }

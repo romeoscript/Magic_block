@@ -40,7 +40,7 @@ pub mod trading_game {
     }
 
     pub fn execute_market_order(ctx: Context<ExecuteOrder>, trading_pair: String, side: OrderSide, quantity: u64) -> Result<()>{
-        process_execute_market_order(ctx, trading_pair, side, quantity);
+        process_execute_market_order(ctx, trading_pair, side, quantity)
     }
     pub fn update_pnl(ctx: Context<UpdatePnl>)->Result<()>{
         process_update_pnl(ctx)

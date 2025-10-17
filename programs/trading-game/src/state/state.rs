@@ -58,13 +58,6 @@ pub struct LeaderboardEntry {
     pub rank: u32,
 }
 
-#[account]
-pub struct PriceFeed {
-    pub trading_pair: String,
-    pub price: i64,      // price with 6 decimals
-    pub last_updated: i64,
-}
-
 #[derive(AnchorSerialize, AnchorDeserialize, Clone, PartialEq, Eq, Debug)]
 pub enum OrderSide {
     Buy,
